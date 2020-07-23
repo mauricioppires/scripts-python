@@ -37,7 +37,7 @@ arquivo1.close()
 arquivo2.close()
 
 """
-arquivo2.txt recebe:
+arquivo2.txt recebeu:
 ----------------
 1,ADMINISTRADOR
 2,TECNICO REDES DE COMPUTADORES
