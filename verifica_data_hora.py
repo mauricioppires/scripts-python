@@ -1,15 +1,24 @@
-# 
-# verifica_data_hora.py
-# 
-# libs: requests, time, sys, ntplib, os
-# 
-# Atencao!
-# Para modificar data/hora no terminal, 
-# WIN - necessário executar como 'administrador'.
-# LNX - necessário executar 'sudo'.
-# 
-# *** os.system('date {}/{}/{}'.format(t.tm_mday, t.tm_mon, t.tm_year))
-# *** os.system('time {}:{}:{}'.format(t.tm_hour, t.tm_min, t.tm_sec))
+"""
+Mauricio P Pires <mauricioppires at gmail dot com>
+
+"""
+
+
+""" 
+verifica_data_hora.py
+
+libs: requests, time, sys, ntplib, os
+
+Atencao!
+
+Para modificar data/hora no terminal, 
+WIN - necessário executar como 'administrador'.
+LNX - necessário executar 'sudo'.
+
+*** os.system('date {}/{}/{}'.format(t.tm_mday, t.tm_mon, t.tm_year))
+*** os.system('time {}:{}:{}'.format(t.tm_hour, t.tm_min, t.tm_sec))
+
+"""
 
 import requests, time, sys, ntplib, os
 
@@ -20,8 +29,7 @@ if __name__ == "__main__":
     # srv_ntp_br = ['a.ntp.br', 'b.ntp.br', 'c.ntp.br', 'gps.ntp.br']
     srv_ntp_br = 'a.ntp.br'
     # clear()
-    print('Mauricio Portela Pires - 2020')
-    print('Vitoria da Conquista - BA-BRA\n')
+    print('Verifica Data e Hora - 2020')
     try:
         m = ntplib.NTPClient().request(srv_ntp_br, version=4).tx_time
         t = time.localtime(m)
