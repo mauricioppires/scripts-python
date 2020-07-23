@@ -16,7 +16,7 @@ RÁDIO TÉCNICO
 from unidecode import unidecode         # se não tiver essa lib, instale: pip install unidecode
 
 arquivo1 = open("arquivo1.txt","r")     # Abre para leitura.
-lista = arquivo1.readlines()            # lista recebe cada linha do arquivo1.txt.
+lista = arquivo1.readlines()            # lista recebe todas as linha do arquivo1.txt.
 arquivo2 = open("arquivo2.txt","w")     # Abre para gravacao.
 
 contador = 1                            # variavel para implementar auto numeração na nova lista.
