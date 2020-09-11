@@ -586,6 +586,8 @@ lst_profissoes = [ 'ACOUGUEIRO',
                    'ZOOTECNISTA' ]
 
 # Solicita informacao do usuario
+# basta digitar um fragmento da profissao.
+# ex.: adm, saude, prog, rede ...
 palavra = input('Qual profissao? ')
 
 # Criando uma nova lista para receber o resultado da busca
